@@ -5,7 +5,6 @@ const isValidAmazonProductURL = (url: string) => {
   try {
     const parsedURL = new URL(url);
     const hostname = parsedURL.hostname;
-
     if(
       hostname.includes('amazon.com') || 
       hostname.includes ('amazon.') || 
@@ -67,3 +66,5 @@ const Searchbar = () => {
 }
 
 export default Searchbar
+
+
